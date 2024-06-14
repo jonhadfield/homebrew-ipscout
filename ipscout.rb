@@ -10,7 +10,7 @@ class Ipscout < Formula
   on_macos do
     on_intel do
       url "https://github.com/jonhadfield/ipscout/releases/download/0.1.5/ipscout_darwin_amd64.tar.gz"
-      sha256 "5d870e7cf9d9c2e6fa44301ef9f65708f307be436c70b901889d9fa6536f8b11"
+      sha256 "5f762e2d738ad17f583e1a465df4cf395cdc5898b74ab1cdab8e112d30daaafe"
 
       def install
         bin.install "ipscout"
@@ -18,7 +18,7 @@ class Ipscout < Formula
     end
     on_arm do
       url "https://github.com/jonhadfield/ipscout/releases/download/0.1.5/ipscout_darwin_arm64.tar.gz"
-      sha256 "34bd266e694e84da971698e351cf5a29f642e2bc368fccc1a43208fbc9975f2c"
+      sha256 "df33827aec2d8003bec4abb970a4f79df184041f3c0a643289623106b65d266c"
 
       def install
         bin.install "ipscout"
@@ -30,7 +30,7 @@ class Ipscout < Formula
     on_intel do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/jonhadfield/ipscout/releases/download/0.1.5/ipscout_linux_amd64.tar.gz"
-        sha256 "44eb5411c16fc33ce72290b90a598bdabd7ab245892cfc190fd1368fa4914ad8"
+        sha256 "22db19ddef2393080e9e2b79c630c3128fd68803df988437f25c14f92d4b91b1"
 
         def install
           bin.install "ipscout"
@@ -40,7 +40,7 @@ class Ipscout < Formula
     on_arm do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/jonhadfield/ipscout/releases/download/0.1.5/ipscout_linux_arm64.tar.gz"
-        sha256 "634239a7e0764395e35eda127fdd4fa5ce8ad8797171972646ae6dc4dc827623"
+        sha256 "4f1ae45c2cb875ba49136bf3411f97ccce52b44c0c5c7559b50e33963a6911d1"
 
         def install
           bin.install "ipscout"
