@@ -6,20 +6,20 @@ class Ipscout < Formula
   desc "A command line tool for network administrators and security analysts to quickly identify the origin and threat of an IP address.
 "
   homepage "https://github.com/jonhadfield/ipscout"
-  version "0.3.0"
+  version "0.3.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jonhadfield/ipscout/releases/download/0.3.0/ipscout_darwin_amd64.tar.gz"
-      sha256 "a1846c2136280af210e11dde1fb5aa6e1d15a66c2cce3f4e11f6e8e3fb2f7a3c"
+      url "https://github.com/jonhadfield/ipscout/releases/download/0.3.1/ipscout_darwin_amd64.tar.gz"
+      sha256 "2b092878f5d7e288c72097e0f84abb5a172b6ed0359f10cd1158df2cdb38b36e"
 
       def install
         bin.install "ipscout"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jonhadfield/ipscout/releases/download/0.3.0/ipscout_darwin_arm64.tar.gz"
-      sha256 "e669f911ab0fac639cea508c92360b6d79f87615321ea98b9d767ac01ce87078"
+      url "https://github.com/jonhadfield/ipscout/releases/download/0.3.1/ipscout_darwin_arm64.tar.gz"
+      sha256 "56ba4c32fa808a60660c2344c5efdcc4cf4987ba05748e90ed9ab92122880ce1"
 
       def install
         bin.install "ipscout"
@@ -29,15 +29,15 @@ class Ipscout < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/jonhadfield/ipscout/releases/download/0.3.0/ipscout_linux_amd64.tar.gz"
-      sha256 "29c9db17e64f14758531a526d31dfc4aabdf00b91bcd3ca76123c3704a6563ee"
+      url "https://github.com/jonhadfield/ipscout/releases/download/0.3.1/ipscout_linux_amd64.tar.gz"
+      sha256 "9f4e45d012c4f0844d6fc3221442e9ced530d851e1d134ea65245f94b5257f54"
       def install
         bin.install "ipscout"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/jonhadfield/ipscout/releases/download/0.3.0/ipscout_linux_arm64.tar.gz"
-      sha256 "fc9cbc64db65065d233a810b01234539dfbab534c80f499bb0469bb56e8f6e54"
+      url "https://github.com/jonhadfield/ipscout/releases/download/0.3.1/ipscout_linux_arm64.tar.gz"
+      sha256 "21103faca11ea35e0050368f0a3ee04675431ab99acc230b76547bee24fd752a"
       def install
         bin.install "ipscout"
       end
