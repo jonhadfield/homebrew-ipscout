@@ -7,25 +7,25 @@ cask "ipscout" do
     run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{staged_path}}/ipscout"], must_succeed: false
   end
 
-  version "0.14.1"
+  version "0.15.0"
 
   on_macos do
     on_arm do
-      sha256 "6bf045372e841cfc704c61dff5605d82304aa985eaa020608219fb62fe05cef5"
+      sha256 "d6cbf7bb35b28e2c13d08f96dc0518f6fe632bd187e9fd9e53f849898a4efefa"
       url "https://github.com/jonhadfield/ipscout/releases/download/#{version}/ipscout_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "8bd13468857992a925a8d4777dba7179b2288d6e2050ff5b383f0bea73db8037"
+      sha256 "5b129e9456fe47783169f248a6921092ce1028670a5c6f9868d864d8ef1a53c3"
       url "https://github.com/jonhadfield/ipscout/releases/download/#{version}/ipscout_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "dcf6a72d29ebb30f0776fbfa5fd4337a2300dc77def5ceff6c5f60c3037ebfd2"
+      sha256 "4fc422ad41fc98d55e81009c7ce959b3cb572e7f908537c3fbef5a3db6eba456"
       url "https://github.com/jonhadfield/ipscout/releases/download/#{version}/ipscout_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "cc13eb412a64d95622b52035099df6310d8b401a222e2aeae289ccb133569d43"
+      sha256 "33f531f772f4b6cc1a9d7aef6f6cfd33cf7e391ce626241b4cf3b62b6bab4db0"
       url "https://github.com/jonhadfield/ipscout/releases/download/#{version}/ipscout_linux_amd64.tar.gz"
     end
   end
